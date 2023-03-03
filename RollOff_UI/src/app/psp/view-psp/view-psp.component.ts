@@ -23,16 +23,16 @@ export class ViewPspComponent implements OnInit {
     projectName:'',
     performanceIssue:'',
     resigned:'',
-    primarySkills:'',
+    primarySkill:'',
     reasonForRollOff:'',
     underProbation: '',
     roleCompetencies: '',
      technicalSkills: '',
      longLeave: '',
-     Remarks: '',
+     remarks: '',
      thisReleaseNeedBackfillIsBackFilled:'',
       leaveType:'',
-      relevantExperienceInYears:0
+      relevantExperienceYrs:0
   }
 
   constructor(private readonly requestService:PspService,private readonly route:ActivatedRoute){}

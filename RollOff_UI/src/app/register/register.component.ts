@@ -24,7 +24,7 @@ export class RegisterComponent implements OnInit {
   ) {}
   ngOnInit(): void {}
   navigateToFirst() {
-    this._router.navigate(['app-login']);
+    this._router.navigate(['']);
   }
   registerForm = new FormGroup({
     username: new FormControl('', [
@@ -79,7 +79,7 @@ export class RegisterComponent implements OnInit {
           if (res == 'Success') {
             alert('Account created successfully');
             this.isAccountCreated = true;
-            this._router.navigate(['app-login']);
+            this._router.navigate(['']);
           } else if (res == 'Already Exists') {
             alert('Account Already Exist. Try another user');
             this.isAccountCreated == false;
